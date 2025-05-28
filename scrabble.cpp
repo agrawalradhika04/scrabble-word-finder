@@ -1,7 +1,3 @@
-// Radhika Agrawal
-// HW 3 - CS210
-// Cheating at Scrabble
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -25,7 +21,7 @@ int score(const vector<char> &list_of_letters, string word){
 				score = score + points[j];
 		}
 	}
-	// BONUS ATTEMPT : Any words that use all of the letters provided by the user (the typical hand size is 7) gain 50 extra points.
+	// Any words that use all of the letters provided by the user (the typical hand size is 7) gain 50 extra points.
 	if(list_of_letters.size() == word.size() - 1) // Letter on board, which has been used in the word, is not a part of letters in hand
 		score = score + 50;
 	return score;
